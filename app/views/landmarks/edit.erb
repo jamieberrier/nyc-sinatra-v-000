@@ -2,7 +2,7 @@
 
 <!-- add content here -->
 <form action="/landmarks/<%= @landmark.id %>" method="POST">
-    <input id="hidden" type="hidden" name="_method" value="patch">
+  <input id="hidden" type="hidden" name="_method" value="patch">
     <label for="landmark_name">Edit the Landmark's Name:</label>
     <br>
     <input type="text" id="landmark_name" name="landmark[name]" value="<%= @landmark.name %>">
